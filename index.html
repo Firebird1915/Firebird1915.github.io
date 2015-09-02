@@ -7,285 +7,325 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Sitename Bootstarp Website Template | Home :: w3layouts</title>
+<title>Team 1915</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!---- start-smoth-scrolling---->
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-<!---- start-smoth-scrolling---->
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-<!----start-top-nav-script---->
-		<script>
+ <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- start slider -->
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript">
 			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
+
+				$('#da-slider').cslider({
+					autoplay : true,
+					bgincrement : 450
 				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
+
 			});
 		</script>
-		<!----//End-top-nav-script---->
-</script>
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$("#owl-demo").owlCarousel({
+					items : 4,
+					lazyLoad : true,
+					autoPlay : true,
+					navigation : true,
+					navigationText : ["", ""],
+					rewindNav : false,
+					scrollPerPage : false,
+					pagination : false,
+					paginationNumbers : false,
+				});
+
+			});
+		</script>
+		<!-- //Owl Carousel Assets -->
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
 </head>
 <body>
-      <!----start-header---->
-		<div class="header">
-			<div class="container">
-				<div class="logo">
-				  <a href="index.html"><img src="images/logo.png" alt=""></a>
-				</div>
-		  		<div class="menu">
-					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
-					<ul class="nav" id="nav">
-					  <li class="current"><a href="index.html">Home</a></li>
-					  <li><a href="about.html">About</a></li>
-					  <li><a href="services.html">Services</a></li>
-					  <li><a href="project.html">Project</a></li>
-					  <li><a href="blog.html">Blog</a></li>
-					  <li><a href="contact.html">Contact</a></li>								
-					  <div class="clear"></div>
-					</ul>
-					<script type="text/javascript" src="js/responsive-nav.js"></script>
-				</div>							
-	  			<div class="clearfix"> </div>
-			    <!----//End-top-nav---->
-			 </div>
+<div class="header_bg">
+<div class="container">
+	<div class="row header">
+		<div class="logo navbar-left">
+			<h1><a href="index.html">Team1915</a></h1>
 		</div>
-		<!----//End-header---->
-		<!----//start-banner---->
-		<div class="banner text-center">
-				<div class="container">
-					<div class="banner-info">
-						<h1>Lorem ipsum loro <br>dolore sit amet vivamus</h1>
-						<p>Lorem ipsum dolore sit amet<br>dolore sit amet</p>
-						<label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><span> </span></a></label>
-				    </div>
-				</div>
+		<div class="h_search navbar-right">
+			<form>
+				<input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
+				<input type="submit" value="search">
+			</form>
 		</div>
-		<!----//end-banner---->
-		<!----//start-content---->
-		<div class="main">
-		   <div class="content_white">
-			<h2>Lorem ipsum dolor sit amet</h2>
-			<p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-		   </div>
-		   <div class="featured_content" id="feature">
-		   	 <div class="container">
-			   	<div class="row text-center">
-			   		<div class="col-md-3 feature_grid1">
-			   			<i class="icon1"> </i>
-			   			<h3 class="m_1"><a href="#">aliquam volu</a></h3>
-			   			<p class="m_2">hendrerit in vulputate velit esse molestie consequat, illum dolore feugiat nulla</p>
-			   			<a href="#" class="feature_btn">More</a>
-			   		</div>
-			   		<div class="col-md-3 feature_grid1">
-			   			<i class="icon2"> </i>
-			   			<h3 class="m_1"><a href="#">augue duis</a></h3>
-			   			<p class="m_2">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposue</p>
-			   			<a href="#" class="feature_btn">More</a>
-			   		</div>
-			   		<div class="col-md-3 feature_grid1">
-			   			<i class="icon3"> </i>
-			   			<h3 class="m_1"><a href="#">soluta nobis</a></h3>
-			   			<p class="m_2">claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investiga</p>
-			   			<a href="#" class="feature_btn">More</a>
-			   		</div>
-			   		<div class="col-md-3 feature_grid2">
-			   			<i class="icon4"> </i>
-			   			<h3 class="m_1"><a href="#">quod mazim</a></h3>
-			   			<p class="m_2">parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima</p>
-			   			<a href="#" class="feature_btn">More</a>
-			   		</div>
-			   	</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="container">
+	<div class="row h_menu">
+		<nav class="navbar navbar-default navbar-left" role="navigation">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
 		    </div>
-		   </div>
-		   <div class="content_white">
-			<h2>hendrerit in vulputate velit</h2>
-			<p>iusto odio dignissim qui blandit praesent luptatum zzril delenit</p>
-		  </div>
-		  <div class="m_3"><span class="left_line"> </span> <span class="right_line"> </span></div>
-		  <div class="container">
-			  <ul id="flexiselDemo3">
-				<li><img src="images/p1.jpg" class="img-responsive" alt=""/></li>
-				<li><img src="images/p2.jpg" class="img-responsive" alt=""/></li>
-				<li><img src="images/p3.jpg" class="img-responsive" alt=""/></li>
-				<li><img src="images/p4.jpg" class="img-responsive" alt=""/></li>
-			 </ul>
-			 <script type="text/javascript">
-				$(window).load(function() {
-					
-					$("#flexiselDemo3").flexisel({
-						visibleItems: 4,
-						animationSpeed: 1000,
-						autoPlay: true,
-						autoPlaySpeed: 3000,    		
-						pauseOnHover: true,
-						enableResponsiveBreakpoints: true,
-				    	responsiveBreakpoints: { 
-				    		portrait: { 
-				    			changePoint:480,
-				    			visibleItems: 1
-				    		}, 
-				    		landscape: { 
-				    			changePoint:640,
-				    			visibleItems: 2
-				    		},
-				    		tablet: { 
-				    			changePoint:768,
-				    			visibleItems: 3
-				    		}
-				    	}
-				    });
-				    
-				});
-			</script>
-			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-			<div class="portfolio-btn">
-			  <a href="#" class="portfolio_btn">View Portfolio</a>
-		    </div>
-		   <div class="testmonial"> 
-		    <div class="row testmonial_top">
-		    	<div class="col-md-6">
-		    		<ul class="test_box">
-		    			<li class="test_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/> </li>
-						<li class="test_desc">
-							<h4><a href="#">diam nonummy nibh</a></h4>
-							<p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit luptatum. <a href="#" class="test_btn"> + more</a></p>
-					    </li>	
-					    <div class="clearfix">	</div>    				
-		    		</ul>
-		    	</div>
-		    	<div class="col-md-6">
-		    		<ul class="test_box">
-		    			<li class="test_img"><img src="images/pic2.jpg" class="img-responsive" alt=""/> </li>
-						<li class="test_desc">
-							<h4><a href="#">consuetudium lector</a></h4>
-							<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. <a href="#" class="test_btn"> + more</a></p>
-					    </li>	
-					    <div class="clearfix">	</div>    		    				
-		    		</ul>
-		    	</div>
-		    </div>	
-		    <div class="row testmonial_bottom">
-		    	<div class="col-md-6">
-		    		<ul class="test_box">
-		    			<li class="test_img"><img src="images/pic3.jpg" class="img-responsive" alt=""/> </li>
-						<li class="test_desc">
-							<h4><a href="#">Nam liber tempor</a></h4>
-							<p>augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer pos. <a href="#" class="test_btn"> + more</a></p>
-					    </li>	
-					    <div class="clearfix">	</div>    		    				
-		    		</ul>
-		    	</div>
-		    	<div class="col-md-6">
-		    		<ul class="test_box">
-		    			<li class="test_img"><img src="images/pic4.jpg" class="img-responsive" alt=""/> </li>
-						<li class="test_desc">
-							<h4><a href="#">formas humanitatis</a></h4>
-							<p>claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.. <a href="#" class="test_btn"> + more</a></p>
-					    </li>	
-					    <div class="clearfix">	</div>    		    				
-		    		</ul>
-		    	</div>
-		    </div>	
-		  </div>    
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="index.html">Home</a></li>
+		        <li><a href="about.html">About</a></li>
+		        <li><a href="blog.html">Blog</a></li>
+		        <li><a href="contact.html">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		    <!-- start soc_icons -->
+		</nav>
+		<div class="soc_icons navbar-right">
+			<ul class="list-unstyled text-center">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			</ul>	
 		</div>
-		<div class="footer">
-			<div class="footer_top">
-				<div class="container">
-					<div class="footer_head">
-						<h2>Lorem ipsum dolor sit amet</h2>
-						<p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-		   			</div>
-					<div class="row footer_grid">
-					   <div class="col-md-6">
-							<ul class="message">
-								<li class="msg-icon"><i class="msg_icon"> </i></li>
-								<li class="msg-desc">
-									<h4><a href="#">Subscribe Our Newsletter</a></h4>
-									<p>Via email on how to grow your business online</p>
-								</li>
-								<div class="clearfix"> </div>
-							</ul>
-							<div class="subscribe">
-								<form>
-							      <input type="text" value="">
-							      <input type="submit" value="Sign up">
-						        </form>
-						    </div>
+	</div>
+</div>
+<div class="slider_bg"><!-- start slider -->
+	<div class="container">
+		<div id="da-slider" class="da-slider text-center">
+			<div class="da-slide">
+				<h2>education portal</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hide_text"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></p>
+				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+			</div>
+			<div class="da-slide">
+				<h2>online educations</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hide_text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></p>
+				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+			</div>
+			<div class="da-slide">
+				<h2>education portal</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hide_text"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></p>
+				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+			</div>
+			<div class="da-slide">
+				<h2>online educations</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hide_text"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></p>
+				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+			</div>
+	   </div>
+	</div>
+</div><!-- end slider -->
+<div class="main_bg"><!-- start main -->
+	<div class="container">
+		<div class="main row">
+			<div class="col-md-3 images_1_of_4 text-center">
+				<span class="bg"><i class="fa fa-globe"></i></span>
+				<h4><a href="#">Global Domination</a></h4>
+				<p class="para">How we plan to take over the world.</p>
+				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			</div>
+			<div class="col-md-3 images_1_of_4 bg1 text-center">
+				<span class="bg"><i class="fa fa-laptop"></i></span>
+				<h4><a href="#">Source Files</a></h4>
+				<p class="para">How we use our code to make magic happen</p>
+				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			</div>
+			<div class="col-md-3 images_1_of_4 bg1 text-center">
+				<span class="bg"><i class="fa fa-cog"></i></span>
+				<h4><a href="#">Grove's Blog</a></h4>
+				<p class="para">Jim Groves disscusion on plans and tools.</p>
+				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			</div>		
+			<div class="col-md-3 images_1_of_4 bg1 text-center">
+				<span class="bg"><i class="fa fa-shield"></i> </span>
+				<h4><a href="#">?????</a></h4>
+				<p class="para">No clue for this one</p>
+				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			</div>	
+		</div>
+	</div>
+</div><!-- end main -->
+<div class="main_btm"><!-- start main_btm -->
+	<div class="container">
+		<div class="main row">
+			<div class="col-md-6 content_left">
+				<img src="images/pic1.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="col-md-6 content_right">
+				<h4>Lorem Ipsum is simply <span>dummy text of the ornare  </span> vulputate printing and  There are many variations of passages.</h4>
+				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words. </p>
+				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			</div>
+		</div>
+				<!----start-img-cursual---->
+					<div id="owl-demo" class="owl-carousel text-center">
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">vehicula diam</a></h4>
+								<p>
+									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+								</p>
+							</div>
 						</div>
-						<div class="col-md-6">
-							<ul class="twitter">
-								<li class="twt_icon"><i class="twt"> </i></li>
-								<li class="twt_desc"><p>dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per.</p></li>
-								<div class="clearfix"> </div>
-							</ul>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Morbi nunc</a></h4>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								</p>
+							</div>
 						</div>
-				    </div>
-			   </div>
-		     </div>
-		     <div class="footer_midle">
-			   	<div class='container'>
-			   	 <div class="row">
-			   		<div class="col-md-4">
-			   		    <ul class="social_left">
-			   			  <li class="facebook"><a href="#"><i class="fb"> </i></a></li>
-			   			  <li class="fb_text"><h4><a href="#">Follow us on Facebook</a></h4>
-			   			  	<p>quod mazim placerat</p>
-			   			  </li>
-			   			  <div class="clearfix"> </div>
-			   			</ul>
-			   		</div>
-			   		<div class="col-md-4">
-			   		    <ul class="social_left">
-			   			  <li class="facebook"><a href="#"><i class="google"> </i></a></li>
-			   			  <li class="fb_text"><h4><a href="#">Follow us on Google +</a></h4>
-			   			  	<p>dolore eu feugiat nulla</p>
-			   			  </li>
-			   			  <div class="clearfix"> </div>
-			   			</ul>
-			   		</div>
-			   		<div class="col-md-4">
-			   		    <ul class="social_left">
-			   			  <li class="facebook"><a href="#"><i class="linked"> </i></a></li>
-			   			  <li class="fb_text"><h4><a href="#">Follow us on LinkedIn</a></h4>
-			   			  	<p>quod mazim placerat</p>
-			   			  </li>
-			   			  <div class="clearfix"> </div>
-			   			</ul>
-			   		</div>
-			   	 </div>
-		       </div>
-		    </div>
-		    <div class="footer_bottom">
-		    	<div class="copy">
-		          <p>&copy; 2014 Template by <a href="http://w3layouts.com" target="_blank">  w3layouts</a></p>
-		       </div>
-		    </div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Sed faucibus</a></h4>
+								<p>
+									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">vehicula diam</a></h4>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">vehicula diam</a></h4>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Lorem ipsum</a></h4>
+								<p>
+									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Morbi nunc</a></h4>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								</p>
+							</div>
+						</div>
+					</div>
+					<!----//End-img-cursual---->
+	</div>
+</div>
+<div class="footer_bg"><!-- start footer -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+			</div>
 		</div>
+	</div>
+</div>
 </body>
-</html>		
+</html>
