@@ -147,7 +147,7 @@ body {
 }
 /* start slider */
 .slider_bg{
-	background: url('../images/slider_bg.jpg') no-repeat;
+	background: url('') no-repeat;
 	background-size: 100%;
 }
 .slider{
