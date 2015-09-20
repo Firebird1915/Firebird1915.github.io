@@ -38,6 +38,8 @@ footer {
 	top: 0px;
 	left: 0px;
 	text-align: left;
+	color: white;
+	
 }
 .da-slide-current{
 	z-index: 1000;
