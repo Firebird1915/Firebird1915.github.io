@@ -149,6 +149,12 @@ body {
 .slider_bg{
 	background: url('') no-repeat;
 	background-size: 100%;
+	-o-background-size: cover;
+	-webkit-transition: background-position 5s ease-out 6s;
+	-moz-transition: background-position 5s ease-out 6s;
+	-o-transition: background-position 5s ease-out 6s;
+	-ms-transition: background-position 5s ease-out 6s;
+	transition: background-position 5s ease-out 6s;
 }
 .slider{
 	padding: 4%;
