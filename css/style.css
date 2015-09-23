@@ -19,6 +19,9 @@ body {
 	background:#ffffff;
 	font-size: 100%;
 }
+.slidestyle{
+	text-shadow: 0 0 4px #fff;
+}
 /* start header */
 .header_bg{
 	background: #ffffff;
