@@ -29,7 +29,7 @@ body {
 	 -webkit-animation-direction: alternate;
 	 -webkit-animation-timing-function: ease-out;
 	 -webkit-animation-fill-mode: forwards;
-	 -webkit-animation-delay: 0s;
+	 -webkit-animation-delay: 2s;
 }
 /* start header */
 .header_bg{
