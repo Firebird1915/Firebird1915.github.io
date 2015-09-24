@@ -22,15 +22,7 @@ body {
 .slidestyle{
 	text-shadow: 0 0 4px #fff;
 }
-#animateme {
-	-webkit-animation-name: testAnim;
-	 -webkit-animation-duration: 2s;
-	 -webkit-animation-iteration-count: 1;
-	 -webkit-animation-direction: alternate;
-	 -webkit-animation-timing-function: ease-out;
-	 -webkit-animation-fill-mode: forwards;
-	 -webkit-animation-delay: 2s;
-}
+
 /* start header */
 .header_bg{
 	background: #ffffff;
@@ -908,11 +900,4 @@ body {
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: #eed;
 }
-@-webkit-keyframes testAnim {
-	0% {
-		-webkit-filter: grayscale(0.5) blur(1px) saturate(2);
-	}
-	100% {
-		-webkit-filter: grayscale(0.2) blur(6px) saturate(9);
-	}
-}
+
