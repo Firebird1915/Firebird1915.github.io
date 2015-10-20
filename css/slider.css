@@ -35,7 +35,34 @@ footer {
 #animateme {
 	-webkit-animation-name: testAnim;
 	 -webkit-animation-duration: 1s;
-	 -webkit-animation-iteration-count: 5;
+	 -webkit-animation-iteration-count: 1;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: forwards;
+	 -webkit-animation-delay: 0s;
+}
+#animateme2 {
+	-webkit-animation-name: testAnim;
+	 -webkit-animation-duration: 1s;
+	 -webkit-animation-iteration-count: 1;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: forwards;
+	 -webkit-animation-delay: 0s;
+}
+#animateme3 {
+	-webkit-animation-name: testAnim;
+	 -webkit-animation-duration: 1s;
+	 -webkit-animation-iteration-count: 1;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: forwards;
+	 -webkit-animation-delay: 0s;
+}
+#animateme4 {
+	-webkit-animation-name: testAnim;
+	 -webkit-animation-duration: 1s;
+	 -webkit-animation-iteration-count: 1;
 	 -webkit-animation-direction: alternate;
 	 -webkit-animation-timing-function: ease-out;
 	 -webkit-animation-fill-mode: forwards;
