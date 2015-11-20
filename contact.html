@@ -14,12 +14,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--in script here -->
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("body").css("display", "none");
-		$("body").fadeIn(2000);
-	});
-</script>
  <!--[if lt IE 9]>
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -29,6 +23,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("body").css("display", "none");
+		$("body").fadeIn(2000);
+
+		$("a").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);
+		});
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+	});
+</script>
 <!----font-Awesome----->
    	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!----font-Awesome----->
