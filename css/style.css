@@ -16,7 +16,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 body {
 	font-family: 'open_sansregular';
-	background:#87A991;
+	background:#ffffff;
 	font-size: 100%;
 }
 .slidestyle{
@@ -25,7 +25,7 @@ body {
 
 /* start header */
 .header_bg{
-	background: #87A991;
+	background: #ffffff;
 }
 .header_bg1 {
 	border-top:8px groove #3b3b3b;
@@ -164,7 +164,7 @@ body {
 }
 /* start main */
 .main_bg{
-	background: #87A991;
+	background: #ffffff;
 }
 .main{
 	padding: 5% 0;
@@ -288,7 +288,7 @@ body {
 }
 /* start main_btm */
 .main_btm{
-	background: #87A991;
+	background: #FFFFFF;
 	border-top: 1px solid rgb(233, 233, 233);
 }
 .content_right h4{
@@ -306,7 +306,7 @@ body {
 }
 /* start footer */
 .footer_bg{
-	background: #87A991;
+	background: #f6f6f6;
 }
 .footer{
 	padding: 4%;
